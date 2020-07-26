@@ -1,0 +1,89 @@
+$main-purple:   #1b0028;
+$nav-purple:    #3b194f;
+$yellow:        #fb990d;
+
+body{
+    background-color:$main-purple;
+    color:white;
+}
+
+.navbar{
+    background-color:$nav-purple;
+}
+
+.fav-icon{
+    width:25px;
+    margin-left:50px;
+}
+
+.btn{
+    height:50px;
+    border-radius:50px;
+    width:40%;
+    &.btn-default{
+        background:white;
+        color:#333;
+    }
+    &.btn-success{
+        background:$yellow;
+        border:$yellow;
+    }
+}
+
+.img-preview{
+    position:relative;
+    &:before,&:after{
+        content:"";
+        width:50px;
+        height:50px;
+        display:block;
+        position:absolute;
+        top:35%;
+        background-color:$nav-purple;
+    }
+    &:before{
+        left:-10px;
+    }
+    &:after{
+        right:-10px;
+    }
+}
+
+.product-list{
+    list-style: none;
+    li{
+        position:relative;
+        margin-bottom:10px;
+        &:before{
+            content:"-";
+            position:absolute;
+            left:-20px;
+            display:block;
+        }
+    }
+}
+
+.info-wrapper{
+    .info-icon{
+        width:20%;
+        background-size:contain;
+        background-repeat: no-repeat;
+        &.red{
+            background-image:url('../img/form-red.svg')
+        }
+        &.cyan{
+            background-image:url('../img/form-cyan.svg')
+        }
+        &.purple{
+            background-image:url('../img/form-purple.svg')
+        }
+        &.yellow{
+            background-image:url('../img/form-yellow.svg')
+        }
+        .info-data{
+            font-size:30px;
+            text-align: center;
+            font-weight:bold;
+        }
+    }
+}

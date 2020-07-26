@@ -1,0 +1,96 @@
+body {
+  background-color: #1b0028;
+  color: white;
+}
+
+.navbar {
+  background-color: #3b194f;
+}
+
+.fav-icon {
+  width: 25px;
+  margin-left: 50px;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 50px;
+  width: 40%;
+}
+
+.btn.btn-default {
+  background: white;
+  color: #333;
+}
+
+.btn.btn-success {
+  background: #fb990d;
+  border: #fb990d;
+}
+
+.img-preview {
+  position: relative;
+}
+
+.img-preview:before, .img-preview:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 20%;
+  background-color: #3b194f;
+}
+
+.img-preview:before {
+  left: -10px;
+}
+
+.img-preview:after {
+  right: -10px;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.product-list li:before {
+  content: "-";
+  position: absolute;
+  left: -20px;
+  display: block;
+}
+
+.info-wrapper .info-icon {
+  width: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info-wrapper .info-icon.red {
+  background-image: url("../img/form-red.svg");
+}
+
+.info-wrapper .info-icon.cyan {
+  background-image: url("../img/form-cyan.svg");
+}
+
+.info-wrapper .info-icon.purple {
+  background-image: url("../img/form-purple.svg");
+}
+
+.info-wrapper .info-icon.yellow {
+  background-image: url("../img/form-yellow.svg");
+}
+
+.info-wrapper .info-icon .info-data {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
